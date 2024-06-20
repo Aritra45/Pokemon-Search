@@ -1,0 +1,67 @@
+/* App.css */
+
+.app {
+  text-align: center;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom, #e04d4d, #ffffff); 
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.search-container {
+  position: relative;
+  display: inline-block;
+}
+
+input[type="text"] {
+  padding: 10px 40px 10px 40px;
+  width: 300px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input[type="text"]:focus {
+  border-color: #007BFF;
+  outline: none;
+  box-shadow: 0 0 10px #007BFF; 
+}
+
+.search-icon {
+  position: absolute;
+  left: 10px; 
+  top: 50%;
+  transform: translateY(-50%);
+  color: #ccc;
+  pointer-events: none; 
+}
+
+.clear-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  outline: none;
+  color: red;
+}
+
+.clear-icon:hover {
+  color: darkred; 
+}
+
+.pokemon-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
